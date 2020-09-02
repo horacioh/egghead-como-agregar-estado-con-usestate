@@ -2,7 +2,12 @@ import React from "react"
 import Field from "./Field"
 
 function Settings() {
-  const user = {}
+  const [user, setUser] = React.useState({
+    firstName: "John",
+    lastName: "Doe",
+    email: "email@example.com",
+    id: "123456",
+  })
   return (
     <div className="py-12">
       <div className="mx-auto px-8 w-full max-w-3xl">
